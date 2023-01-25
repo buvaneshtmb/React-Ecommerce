@@ -13,8 +13,8 @@ import EditPost from "./components/AdminPower/EditPost";
 import EditUser from "./components/AdminPower/EditUser";
 import Notification from "./components/AdminPower/Notification";
 import AddPost from "./components/AdminPower/AddPost";
-import User from "./components/AdminPower/User";
 import Post from "./components/AdminPower/Post";
+import User from "./components/AdminPower/User";
 
 function App() {
   return (
@@ -24,21 +24,16 @@ function App() {
           <Routes>
             <Route path="/collections" element={<Collections />} />
             <Route path="/productdetails/:id" element={<ProductDetails />} />
-            {/* <Route path='*' element={<Navigate to={'/collections'} />} /> */}
+            <Route path="*" element={<Navigate to={"/collections"} />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/favourite" element={<Favourite />} />
-          </Routes>
-        </div>
-        <div>
-          {/* <Admin /> */}
-          <Routes>
             <Route path="/admin" element={<Admin />} />
-            <Route path="/addpost" element={<AddPost />} />
             <Route path="/post" element={<Post />} />
+            <Route path="user" element={<User />} />
+            <Route path="/addpost" element={<AddPost />} />
             <Route path="/editpost/:id" element={<EditPost />} />
-            <Route path="/user" element={<User />} />
             <Route path="/adduser" element={<AddUser />} />
             <Route path="/edituser/:id" element={<EditUser />} />
             <Route path="/editpost" element={<EditPost />} />
