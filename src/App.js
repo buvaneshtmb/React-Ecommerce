@@ -38,6 +38,7 @@ function App() {
             <Route path="/edituser/:id" element={<EditUser />} />
             <Route path="/editpost" element={<EditPost />} />
             <Route path="/notification" element={<Notification />} />
+            <Route path="*" element={<Navigate to={"/collections"} />} />
           </Routes>
         </div>
       </BrowserRouter>
