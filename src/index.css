@@ -1,13 +1,159 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* -----------Admin login------- */
+.vertical {
+    border-left: 1px solid black;
+    height: 450px;
+    position:absolute;
+    left: 50%;
+}
+/* <----------------------------------Login Page--------------------------------->*/
+
+.full{
+    max-width: 100%;
+   /* background-color: cadetblue; */
+   /* border-style: solid; */
+   border-radius: 10px;
+}
+.header{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    color: aqua;
+
+}
+.lab{
+    margin-top: 20px ;
+    /* min-height: 50px; */
+    /* justify-content: center; */
+    /* margin-left: 50px; */
+    /* margin-top: 50px; */
+    margin-left: 100px;
+}
+.lab1{
+    padding: 10px;
+    display: block;
+}
+.lab1 label{
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+.lab1 input{
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    min-height: 35px;
+    /* border-width: 2px; */
+    border-radius: 10px;
+    background-color: aquamarine;
+    
+}
+.lab1 input:hover{
+     background-color: aqua;
+}
+.lab2{
+    padding: 10px;
+    display: block;
+}
+.lab2 label{
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+.lab2 input{
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    min-height: 35px;
+    /* border-width: 2px; */
+    border-radius: 10px;
+    background-color: aquamarine;
+   
+}
+.lab2 input:hover{
+    background-color: aqua;
+}
+.log{
+    padding-top: 20px;
+    margin-left: 100px;
+    /* border-style: solid; */
+}
+.log input{
+    width: 75%;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 20px;
+    background-color:springgreen;
+    justify-content: center;
+    
+}
+.log input:hover{
+    background-color: yellowgreen;
+}
+.register{
+    padding: 30px;
+}
+.register p{
+    text-align: center;
+    font-size: 17px;
+}
+.register p a{
+    font-size: 23px;
+    text-decoration: none;
+}
+.register p a:hover{
+    color:blue;
+    cursor: context-menu;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* <-------------------------------------Admin Page---------------------------------> */
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:yellowgreen
 }
+.home{
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 40px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:blue;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.search{
+    margin-right: 50px;
+    height: 40px;
+    width: 250px;
+}
+

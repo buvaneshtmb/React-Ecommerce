@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+a {
+   text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-item img {
+   object-fit: cover;
+   object-position: top;
+   height: 100vh;
+   overflow: hidden;
+   width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.old_price {
+   font-weight: bold;
+   color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.new_price {
+   font-weight: bold;
+   background-color: green;
+   color: white;
+   padding: 2px;
+   border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.pic-box {
+   position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hot {
+   background-color: orangered;
+   color: white;
+   width: 50px;
+   text-align: center;
+   font-weight: bold;
+   display: inline;
+   border-radius: 5px;
+   padding: 5px;
+   position: absolute;
+   top: 0;
+   right: 20px;
+   z-index: 10;
+}
+
+.buvi {
+   width: 250px;
+   height: 250px;
+}
+
+
+
+/* ---------Card-------- */
+
+table,
+td,
+th {
+   border: 1px solid;
+}
+
+table {
+   width: 50%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+.center {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+th,
+tr {
+   height: 50px;
+}
+
+td {
+   text-align: center;
+}
+
+tr:hover {
+   background-color: coral;
+}
+
+tr:nth-child(even) {
+   background-color: #f2f2f2;
 }
